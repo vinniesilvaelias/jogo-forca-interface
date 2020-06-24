@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>673</width>
+    <height>615</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="jogo">
+   <property name="font">
+    <font>
+     <family>Gill Sans Ultra Bold</family>
+     <pointsize>26</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="device">
+      <item>
+       <layout class="QVBoxLayout" name="display">
+        <item>
+         <layout class="QHBoxLayout" name="jogador">
+          <item>
+           <layout class="QVBoxLayout" name="dados">
+            <item>
+             <layout class="QHBoxLayout" name="jogador_dados">
+              <item>
+               <widget class="QLabel" name="nome">
+                <property name="font">
+                 <font>
+                  <family>Elephant</family>
+                  <pointsize>20</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                  <underline>false</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>JOGADOR:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="nome_jogador">
+                <property name="font">
+                 <font>
+                  <family>Elephant</family>
+                  <pointsize>20</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="jogo_dados">
+              <item>
+               <widget class="QLabel" name="lbl_palavra">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Elephant</family>
+                  <pointsize>20</pointsize>
+                  <weight>50</weight>
+                  <italic>false</italic>
+                  <bold>false</bold>
+                  <underline>false</underline>
+                  <strikeout>false</strikeout>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>PALAVRA SECRETA:</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="palavra_velada">
+                <property name="font">
+                 <font>
+                  <family>Gill Sans Ultra Bold Condensed</family>
+                  <pointsize>28</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignBottom|Qt::AlignHCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_chutar">
+          <property name="text">
+           <string>CHUTAR</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_novo">
+          <property name="text">
+           <string>NOVO</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="ae">
+          <item>
+           <widget class="QPushButton" name="btn_a">
+            <property name="text">
+             <string>A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_b">
+            <property name="text">
+             <string>B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_c">
+            <property name="text">
+             <string>C</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_d">
+            <property name="text">
+             <string>D</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_e">
+            <property name="text">
+             <string>E</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="teclado">
+        <item>
+         <layout class="QHBoxLayout" name="fj">
+          <item>
+           <widget class="QPushButton" name="btn_f">
+            <property name="text">
+             <string>F</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_g">
+            <property name="text">
+             <string>G</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_h">
+            <property name="text">
+             <string>H</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_i">
+            <property name="text">
+             <string>I</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_j">
+            <property name="text">
+             <string>J</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="ko">
+          <item>
+           <widget class="QPushButton" name="btn_k">
+            <property name="text">
+             <string>K</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_l">
+            <property name="text">
+             <string>L</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_m">
+            <property name="text">
+             <string>M</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_n">
+            <property name="text">
+             <string>N</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_o">
+            <property name="text">
+             <string>O</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="pt">
+          <item>
+           <widget class="QPushButton" name="btn_p">
+            <property name="text">
+             <string>P</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_q">
+            <property name="text">
+             <string>Q</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_r">
+            <property name="text">
+             <string>R</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_s">
+            <property name="text">
+             <string>S</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_t">
+            <property name="text">
+             <string>T</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="uz">
+          <item>
+           <widget class="QPushButton" name="btn_u">
+            <property name="text">
+             <string>U</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_v">
+            <property name="text">
+             <string>V</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_x">
+            <property name="text">
+             <string>X</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_w">
+            <property name="text">
+             <string>W</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_y">
+            <property name="text">
+             <string>Y</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_z">
+            <property name="text">
+             <string>Z</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>673</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMENU">
+    <property name="title">
+     <string>MENU</string>
+    </property>
+    <addaction name="actionRECORD"/>
+   </widget>
+   <addaction name="menuMENU"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionRECORD">
+   <property name="text">
+    <string>RECORD</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
